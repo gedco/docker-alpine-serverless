@@ -7,7 +7,7 @@ FROM node:10-alpine
 
 # Install and configure all the software. Clean.
 RUN apk upgrade; apk add nano aws-cli; \
-    npm install -g serverless; \
+    npm install -g serverless aws-sdk; \
     echo "------------ DONE -------------"; \
     sls --help;
 

@@ -2,3 +2,4 @@
 .aws/
 .serverless/
 .serverlessrc
+.npm
