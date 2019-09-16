@@ -5,6 +5,6 @@ Contains:
 
 * Alpine Linux v3.9
 * NodeJS v10.16.3
-* Serverless Framework v1.51.0
+* Serverless Framework v1.52.0
 
-Last update: 03-09-2019
+Last update: 16-09-2019
