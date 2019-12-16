@@ -1,15 +1,15 @@
 # Gedco Alpine Linux Serverless Framework Docker image.
 #
-#   Build usage: docker build -t gedco/alpine-serverless --pull --rm .
-# Dev Run usage: docker run --name sls-awesomeapp --rm -it -v $(pwd):/root/ gedco/alpine-serverless
+#   Build usage: docker build -t alpine-serverless --pull --rm .
+# Dev Run usage: docker run --name sls-awesomeapp --rm -it -v $(pwd):/root/ alpine-serverless
 #
-FROM node:10-alpine
+FROM node:12-alpine
 
 # Install and configure all the software. Clean.
-RUN apk upgrade; apk add nano aws-cli; \
+RUN apk upgrade; apk add --no-cache nano less curl; \
     npm install -g serverless aws-sdk; \
     echo "------------ DONE -------------"; \
-    sls --help;
+    rm /var/cache/apk/*; sls --help;
 
 # Default to console.
 CMD ["/bin/sh"]
