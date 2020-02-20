@@ -3,10 +3,10 @@ Alpine Linux based Serverless Framework docker image for dev & prod stages.
 
 Contains:
 
-* Alpine Linux v3.9
-* NodeJS v12.14.1
-* Serverless Framework v1.60.1
+* Alpine Linux v3.11
+* NodeJS v12.15.0-r1
+* Serverless Framework v1.64.0
 
-[Release page](https://github.com/serverless/serverless/releases/tag/v1.60.1)
+[Release page](https://github.com/serverless/serverless/releases/tag/v1.64.0)
 
-Last update: 22-12-2019
+Last update: 19-02-2020
